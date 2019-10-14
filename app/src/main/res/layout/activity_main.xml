@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listas"
+        android:textSize="20dp"
+        android:id="@+id/btnInsertLista"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Creación de tareas"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Escriba una descripción"
+        android:id="@+id/editDescripTarea"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Ingresar una fecha de realizado"
+        android:id="@+id/editRealizado"
+        android:inputType="date"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnInsertarTarea"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:text="Insertar"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnBuscarTarea"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <Button
+            android:id="@+id/btnEliminarTareas"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Eliminar"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/listaConsultaTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar consulta individual"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/etiquetaMostrarTarea"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar tareas registradas"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tareasRegitradas"
+
+        />
+</LinearLayout>

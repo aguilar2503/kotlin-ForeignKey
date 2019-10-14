@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Creación de Listas"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Escriba una descripción"
+        android:id="@+id/editDescripLista"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Ingresar una fecha"
+        android:id="@+id/editFecha"
+        android:inputType="date"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnInsertarLista2"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:text="Insertar"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnBuscarLista"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Regresar"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:textSize="20dp"
+        android:id="@+id/btnActualizarLista"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/listaConsulta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar consulta individual"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:id="@+id/etiquetaMostrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listas registradas"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listasRegistradasMain2"/>
+
+</LinearLayout>
