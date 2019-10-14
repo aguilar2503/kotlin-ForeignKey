@@ -8,13 +8,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Listas"
-        android:textSize="20dp"
-        android:id="@+id/btnInsertLista"
-        />
+
 
     <TextView
         android:layout_width="match_parent"
@@ -71,6 +65,13 @@
             android:text="Eliminar"
             android:textSize="15dp" />
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listas"
+        android:textSize="20dp"
+        android:id="@+id/btnInsertLista"
+        />
 
     <TextView
         android:id="@+id/listaConsultaTarea"
